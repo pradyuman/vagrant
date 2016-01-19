@@ -25,6 +25,6 @@ Vagrant.configure(2) do |config|
 	config.vm.provision "shell", path: "init.sh"
 
 	"Synced Folders
-	config.vm.synced_folder "./data", "/host/", "mount_options =? [ "dmode=777", "fmode=666" ]
+	config.vm.synced_folder "./data", "/host/", "mount_options => [ "dmode=777", "fmode=666" ]
 
 end
